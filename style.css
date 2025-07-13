@@ -1,0 +1,214 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    line-height: 1.6;
+    color: #333;
+    background: #f8f9fa;
+}
+
+/* Navbar */
+.header {
+    background: #c0196a;
+    color: #fff;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-heading {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+.menu-list-items a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.menu-list-items a:hover {
+    color: #00aced;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background: linear-gradient(120deg, #1170af, #00aced);
+    color: #fff;
+    text-align: center;
+    padding: 0 1rem;
+}
+.hero .headings h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+.hero .headings h4 {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.intro-buttons .btn {
+    margin: 1rem 0.5rem;
+    padding: 0.8rem 2rem;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+.intro-buttons .btn:hover {
+    background: #fff;
+    color: #108bdd;
+}
+
+/* Section Headings */
+.my-heading, .greet-heading {
+    color: #003366;
+    margin-bottom: 1rem;
+}
+.text-center {
+    text-align: center;
+}
+
+/* Portfolio / Certifications */
+.portfolio-content, .services-content {
+    padding: 2rem;
+}
+.my-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+.my-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 2rem;
+    text-align: center;
+    flex: 1 1 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.my-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+.icon i {
+    font-size: 2rem;
+    color: #007acc;
+    margin-bottom: 1rem;
+}
+.blue-text {
+    color: #007acc;
+}
+.small-para {
+    font-size: 0.95rem;
+}
+
+/* About */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1rem;
+    background: #def2fa;
+}
+.about-text {
+    flex: 1 1 400px;
+}
+.about-image img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Contact */
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 3rem 1rem;
+    background: #e6f0fa;
+}
+.contact-form-container, .contact-details {
+    flex: 1 1 300px;
+}
+.contact-form .form-controls {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-form .form-btn {
+    background: #007acc;
+    color: #fff;
+    border: none;
+}
+.contact-form .form-btn:hover {
+    background: #005fa3;
+}
+.contact-details h5 {
+    margin-top: 1rem;
+    color: #003366;
+}
+
+/* Footer */
+.footer {
+    background: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+}
+.footer a {
+    color: #fff;
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+}
+.footer a:hover {
+    color: #00aced;
+}
+
+/* Responsive Nav (Hamburger icon will be handled in script.js) */
+.hamburger {
+    display: none;
+}
+@media(max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        background: #003366;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 200px;
+        display: none;
+    }
+    .menu ul.show {
+        display: flex;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+}
+s
